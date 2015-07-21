@@ -13,6 +13,17 @@ window.onload = function(event){
 	document.getElementById("index_input_cet").addEventListener('touchstart',Select,false); 
 	document.getElementById("CET4").addEventListener('touchstart',Select4,false); 
 	document.getElementById("CET6").addEventListener('touchstart',Select6,false); 
+
+	var wimg = "img/logo.jpg";
+	var wtit = '我惊到了！这是我拿到的托福雅思成绩，你来看看......';
+	function shareQuan() {  //<span style="font-family: Arial, Helvetica, sans-serif;">分享到朋友圈只有标题显示</span>
+    	WeixinJSBridge.invoke('shareTimeline',{
+    	    "img_url": wimg,
+    	    "img_width": "200",
+    	    "img_height": "200",
+    	    "title": wtit
+    	});
+	}
 } 
 </script>
 </head>
