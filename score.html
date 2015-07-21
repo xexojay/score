@@ -13,17 +13,38 @@
 		document.getElementById('result_share').style.display="none";
 		document.getElementById("result_link_test").addEventListener('touchstart',Test,false); 
 		document.getElementById("result_share").addEventListener('touchstart',noShare,false); 
-		var wimg = "img/logo.jpg";
-		var wtit = '我惊到了！这是我拿到的托福雅思成绩，你来看看......';
-		function shareQuan() {  //<span style="font-family: Arial, Helvetica, sans-serif;">分享到朋友圈只有标题显示</span>
-    		WeixinJSBridge.invoke('shareTimeline',{
-    		    "img_url": wimg,
-    		    "img_width": "200",
-    		    "img_height": "200",
-    		    "title": wtit
-    		});
-		}
+		
+	var wimg = "img/logo.jpg";
+	var wtit = '我惊到了！这是我拿到的托福雅思成绩，你来看看......';
+	function shareMsg() {//<span style="font-family: Arial, Helvetica, sans-serif;">发送给好友</span><span style="font-family: Arial, Helvetica, sans-serif;">标题和内容默认都显示</span>
+    	WeixinJSBridge.invoke('sendAppMessage',{
+    	    "img_url": wimg,
+    	    "img_width": "200",
+    	    "img_height": "200",
+    	    "title": wtit,
+    	})
 	}
+	function shareQuan() {  //<span style="font-family: Arial, Helvetica, sans-serif;">分享到朋友圈只有标题显示</span>
+    	WeixinJSBridge.invoke('shareTimeline',{
+    	    "img_url": wimg,
+    	    "img_width": "200",
+    	    "img_height": "200",
+    	    "title": wtit
+    	});
+	}
+	// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    // 发送给好友
+    WeixinJSBridge.on('menu:share:appmessage', function(argv){
+        shareMsg();
+    });
+    // 分享到朋友圈
+    WeixinJSBridge.on('menu:share:timeline', function(argv){
+        shareQuan();
+    });
+}, false);
+
+}
 </script>
 </head>
 
@@ -61,20 +82,8 @@
 		</div>
 	</div>
 	<img class="result_img" src="img/result_middle.png">
-	<div class="result_codebg">
-		<div class="result_code">
-			<img class="result_code_img" src="img/result_code.png">
-			<div class="result_code_div">
-				<p style="font-size:1.2em; font-family:黑体;">
-					长按二维码
-				</p>
-				<p style="font-size:0.9em; font-family:黑体;">
-					更多干货在这里
-				</p>
-			</div>
-			<div style="clear:both;"></div> 
-		</div>
-		<div style="clear:both;"></div> 
+	<div class="result_code">
+		<img class="result_code_img" src="img/result_code.jpg">
 	</div>
 	<div class="result_txt" style=" font-family:黑体;">
 		<p>
