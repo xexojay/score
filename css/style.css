@@ -5,7 +5,7 @@ body{ margin:0px; padding:0px;}
 .index_bg{ width:100%; height:100%; z-index:-1; position:relative;}
 .index_txt{ width:100%; height:12%; top:34%; border:0px #FF0000 solid; position:absolute; z-index:10;}
 .index_txt p{ width:100%; height:50%; text-align:center; font-family:黑体; font-size:1.4em; color:#FFFFFF; border:0px #FFFFFF solid; margin:0; letter-spacing:2px; text-shadow:0 0 2px #000000;}
-.index_input{ width:90%; height:50px; margin:0 5%; border:#827E7B solid 1px; position:absolute; top:48%; z-index:10;}
+.index_input{ width:90%; height:50px; margin:0 5%; border:#827E7B solid 0px; position:absolute; top:48%; z-index:10;}
 .index_input_cet{ float:left; width:30%; height:50px; background-color:#FFFFFF; border:0; opacity:1; position:relative;}
 .index_input_select{ float:left; width:70%; height:50px; text-align:center; font-family:Arial; font-size:1.2em; color:#afafaf; height:50px; line-height:50px;}
 .index_input_arrow{ width:25%; height:50px; margin-left:72%; position:absolute;}
@@ -15,7 +15,7 @@ body{ margin:0px; padding:0px;}
 .index_input_arrow_top1{ position:absolute; border-color:transparent transparent #FFFFFF transparent; border-width:0 8px 8px 8px; border-style:solid; top:23px;}
 .index_input_list{ width:100%; height:62px; border:0px #FFFF00 solid; margin-top:50px; background-color:#FFFFFF; opacity:0.95;}
 .index_input_list div{ width:100%; height:30px; line-height:30px; text-align:center; font-family:Arial; font-size:1.2em; color:#afafaf; border-top:1px solid #CCCCCC;}
-.index_input input{ float:right; width:100%; height:100%; background-color:#FFFFFF; font-family:黑体; font-size:1.2em; color:#afafaf; line-height:48px; text-align:center; border:0;opacity:0.9; border-radius:0px; position:absolute; -webkit-appearance:none; display:inline;}
+.index_input input{ float:right; width:60%; margin:0 20px; height:48px; background-color:#FFFFFF; font-family:黑体; font-size:1.2em; color:#afafaf; line-height:48px; text-align:center; border:0;opacity:0.9; border-radius:0px; position:absolute; -webkit-appearance:none; display:inline;}
 .index_submit input{ width:30%; height:19.4%; line-height:19%; margin:0 35%; border:0px #000000 solid; background:transparent; opacity:0.9; text-align:center; color:#FFFFFF; font-family:黑体; font-size:1.8em; position:absolute; top:67.5%; -webkit-appearance:none; display:inline;}
 
 .box2{ min-width:320px; max-width:720px; width:100%; height:100%; margin:0 auto; position:absolute; border:0px #000000 solid;}
