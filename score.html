@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>托福雅思成绩转换器</title>
+<link type="text/css" href="css/style.css" rel="stylesheet">
+<script src="js/function.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	window.onload=function(event){
+//		alert("start");
+		Show();
+		document.getElementById("result_link_share").addEventListener('touchstart',Share,false); 
+		document.getElementById('result_share').style.display="none";
+		document.getElementById("result_link_test").addEventListener('touchstart',Test,false); 
+		document.getElementById("result_share").addEventListener('touchstart',noShare,false); 
+	}
+</script>
+</head>
+
+<body>
+<div class="box2" id="box2">
+	<div class="result_score">
+		<span style="color:#7D7D7D; font-size:1em; border:0px #006666 solid; font-family:黑体;">
+			根据你的四六级分数可预估出：
+		</span>
+		<div class="result_score_Toefl">
+			<p style="color:#7D7D7D; font-size:1.5em; font-family:黑体; margin:30px 0 0 0;">
+				托福
+			</p>
+			<p style="margin:0;">
+				<span id="Toefl" style="font-family:Arial; font-size:3.5em;">
+					000
+				</span>
+				<span style="font-size:1.4em; font-family:黑体;">
+					分
+				</span>
+			</p>
+		</div>
+		<div class="result_score_Ielts">
+			<p style="color:#7D7D7D; font-size:1.5em; font-family:黑体; margin:30px 0 0 0;">
+				雅思
+			</p>
+			<p style="margin:0;">
+				<span id="Ielts" style="font-family:Arial; font-size:3.5em;">
+					0.0
+				</span>
+				<span style="font-size:1.4em; font-family:黑体;">
+					分
+				</span>
+			</p>
+		</div>
+	</div>
+	<img class="result_img" src="img/result_middle.png">
+	<div class="result_codebg">
+		<div class="result_code">
+			<img class="result_code_img" src="img/result_code.png">
+			<div class="result_code_div">
+				<p style="font-size:1.2em; font-family:黑体;">
+					长按二维码
+				</p>
+				<p style="font-size:0.9em; font-family:黑体;">
+					更多干货在这里
+				</p>
+			</div>
+			<div style="clear:both;"></div> 
+		</div>
+		<div style="clear:both;"></div> 
+	</div>
+	<div class="result_txt" style=" font-family:黑体;">
+		<p>
+			回复“1”至后台
+		</p>
+		<p>
+			领取2016年美国大学最新Master托福成绩要求
+		</p>
+	</div>
+	<div class="result_link" style=" font-family:黑体;">
+		<div class="result_link_share" id="result_link_share">
+			跟朋友炫耀一下
+		</div>
+		<div class="result_link_test" id="result_link_test">
+			我也来测测
+		</div>
+	</div>
+	<div class="result_share" id="result_share" style="display:none;">
+		<img src="img/result_share.png">
+	</div>
+</div>
+</body>
+</html>
