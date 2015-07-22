@@ -16,7 +16,30 @@ body{ margin:0px; padding:0px;}
 .index_input_list{ width:100%; height:62px; border:0px #FFFF00 solid; margin-top:50px; background-color:#FFFFFF; opacity:0.95;}
 .index_input_list div{ width:100%; height:30px; line-height:30px; text-align:center; font-family:Arial; font-size:1.2em; color:#afafaf; border-top:1px solid #CCCCCC;}
 .index_input input{ float:right; width:60%; margin:0 15px 0 15px; height:48px; background-color:#FFFFFF; font-family:黑体; font-size:1.2em; color:#afafaf; line-height:48px; text-align:center; border:0;opacity:0.9; border-radius:0px; position:absolute; -webkit-appearance:none;}
-.index_submit input{ width:30%; height:19.4%; line-height:19%; margin:0 35%; border:0px #000000 solid; background:transparent; opacity:0.9; text-align:center; color:#FFFFFF; font-family:黑体; font-size:1.8em; position:absolute; top:67.5%; -webkit-appearance:none; display:inline;}
+
+
+/*
+.index_submit input{ width:30%; height:19.4%; line-height:19%; margin:0 35%; border:0px #000000 solid; background:transparent; opacity:0.9; text-align:center; color:#FFFFFF; font-family:黑体; font-size:1.8em; position:absolute; top:67.5%; -webkit-appearance:none; display:inline;}*/
+.index_submit{
+text-align: center;
+  top: 67.5%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 19%;
+}
+.index_submit input{
+height: 100%;
+  line-height: 100%;
+  background: none;
+  border:none;
+  opacity: 0.9;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.8em;
+  -webkit-appearance: none;
+  display: inline;
+}
 
 .box2{ min-width:320px; max-width:720px; width:100%; height:100%; margin:0 auto; position:absolute; border:0px #000000 solid;}
 .result_score{ width:88%; height:auto; margin:10% 2% 0 10%; border:0px #FF0000 solid; font-family:黑体; position:relative;}
