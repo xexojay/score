@@ -5,6 +5,7 @@
 <title>托福雅思成绩转换器</title>
 <link type="text/css" href="css/style.css" rel="stylesheet">
 <script src="js/function.js" type="text/javascript" language="javascript"></script>
+<script src="js/jweixin-1.0.0.js" type="text/javascript" language="javascript"></script>
 <script type="text/javascript" language="javascript">
 	window.onload=function(event){
 //		alert("start");
@@ -13,37 +14,20 @@
 		document.getElementById('result_share').style.display="none";
 		document.getElementById("result_link_test").addEventListener('touchstart',Test,false); 
 		document.getElementById("result_share").addEventListener('touchstart',noShare,false); 
+	wx.onMenuShareTimeline({
+	    title: '我惊到了！这是我拿到的托福雅思成绩，你来看看......', // 分享标题
+	  //  link: '', // 分享链接
+	    imgUrl: 'img/logo.jpg', // 分享图标
+	    success: function () { 
+	        // 用户确认分享后执行的回调函数
+			alert("1");
+	    },
+	    cancel: function () { 
+	        // 用户取消分享后执行的回调函数
+			alert("0");
+	    }
+	});
 		
-	var wimg = "img/logo.jpg";
-	var wtit = '我惊到了！这是我拿到的托福雅思成绩，你来看看......';
-	function shareMsg() {//<span style="font-family: Arial, Helvetica, sans-serif;">发送给好友</span><span style="font-family: Arial, Helvetica, sans-serif;">标题和内容默认都显示</span>
-    	WeixinJSBridge.invoke('sendAppMessage',{
-    	    "img_url": wimg,
-    	    "img_width": "200",
-    	    "img_height": "200",
-    	    "title": wtit,
-    	})
-	}
-	function shareQuan() {  //<span style="font-family: Arial, Helvetica, sans-serif;">分享到朋友圈只有标题显示</span>
-    	WeixinJSBridge.invoke('shareTimeline',{
-    	    "img_url": wimg,
-    	    "img_width": "200",
-    	    "img_height": "200",
-    	    "title": wtit
-    	});
-	}
-	// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
-document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-    // 发送给好友
-    WeixinJSBridge.on('menu:share:appmessage', function(argv){
-        shareMsg();
-    });
-    // 分享到朋友圈
-    WeixinJSBridge.on('menu:share:timeline', function(argv){
-        shareQuan();
-    });
-}, false);
-
 }
 </script>
 </head>
