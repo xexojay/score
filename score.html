@@ -2,10 +2,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>托福雅思成绩转换器</title>
+<title>我惊到了！这是我拿到的托福雅思成绩，你来看看......</title>
 <link type="text/css" href="css/style.css" rel="stylesheet">
 <script src="js/function.js" type="text/javascript" language="javascript"></script>
-<script src="js/jweixin-1.0.0.js" type="text/javascript" language="javascript"></script>
 <script type="text/javascript" language="javascript">
 	window.onload=function(event){
 //		alert("start");
@@ -13,26 +12,15 @@
 		document.getElementById("result_link_share").addEventListener('touchstart',Share,false); 
 		document.getElementById('result_share').style.display="none";
 		document.getElementById("result_link_test").addEventListener('touchstart',Test,false); 
-		document.getElementById("result_share").addEventListener('touchstart',noShare,false); 
-	wx.onMenuShareTimeline({
-	    title: '我惊到了！这是我拿到的托福雅思成绩，你来看看......', // 分享标题
-	  //  link: '', // 分享链接
-	    imgUrl: 'img/logo.jpg', // 分享图标
-	    success: function () { 
-	        // 用户确认分享后执行的回调函数
-			alert("1");
-	    },
-	    cancel: function () { 
-	        // 用户取消分享后执行的回调函数
-			alert("0");
-	    }
-	});
-		
+		document.getElementById("result_share").addEventListener('touchstart',noShare,false); 		
 }
 </script>
 </head>
 
 <body>
+<div style="display:none;">
+	<img src="img/logo.jpg">
+</div>
 <div class="box2" id="box2">
 	<div class="result_score">
 		<span style="color:#7D7D7D; font-size:1em; border:0px #006666 solid; font-family:黑体;">
