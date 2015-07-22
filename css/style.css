@@ -15,8 +15,8 @@ body{ margin:0px; padding:0px;}
 .index_input_arrow_top1{ position:absolute; border-color:transparent transparent #FFFFFF transparent; border-width:0 8px 8px 8px; border-style:solid; top:23px;}
 .index_input_list{ width:100%; height:62px; border:0px #FFFF00 solid; margin-top:50px; background-color:#FFFFFF; opacity:0.95;}
 .index_input_list div{ width:100%; height:30px; line-height:30px; text-align:center; font-family:Arial; font-size:1.2em; color:#afafaf; border-top:1px solid #CCCCCC;}
-.index_input input{ float:right; width:60%; margin:0 20px 0 10px; height:48px; background-color:#FFFFFF; font-family:黑体; font-size:1.2em; color:#afafaf; line-height:48px; text-align:center; border:0;opacity:0.9; border-radius:0px; position:absolute; -webkit-appearance:none;}
-.index_submit input{ width:30%; height:19.4%; line-height:19%; margin:0 35%; border:0px #000000 solid; background:transparent; opacity:0.9; text-align:center; color:#FFFFFF; font-family:黑体; font-size:1.8em; position:absolute; top:67.5%; -webkit-appearance:none;}
+.index_input input{ float:right; width:60%; margin:0 15px 0 15px; height:48px; background-color:#FFFFFF; font-family:黑体; font-size:1.2em; color:#afafaf; line-height:48px; text-align:center; border:0;opacity:0.9; border-radius:0px; position:absolute; -webkit-appearance:none;}
+.index_submit{ width:30%; height:9%; padding:8% 0; line-height:180%; margin:0 35%; border:0px #000000 solid; background:transparent; opacity:0.9; text-align:center; color:#FFFFFF; font-family:黑体; font-size:1.9em; position:absolute; top:67%;}
 
 .box2{ min-width:320px; max-width:720px; width:100%; height:100%; margin:0 auto; position:absolute; border:0px #000000 solid;}
 .result_score{ width:88%; height:auto; margin:10% 2% 0 10%; border:0px #FF0000 solid; font-family:黑体; position:relative;}
@@ -25,7 +25,7 @@ body{ margin:0px; padding:0px;}
 .result_score_Ielts{ width:45%; height:120px; float:left; border:0px #3300CC solid;}
 .result_img{ width:100%; height:auto; position:relative; margin:0; padding-top:10%; z-index:100;}
 .result_code{ width:70%; height:auto; position:relative; background-color:#00CBEB; padding:5% 15% 1% 15%; border:0px #000099 solid; top:-10px; z-index:80;}
-.result_code_img{ width:auto; height:auto; position:relative;}
+.result_code_img{ width:100%; height:auto; position:relative;}
 .result_txt{ width:100%; height:auto; padding:2% 0; background-color:#00CBEB; position:relative; top:-15px; z-index:90; border:0px #00FF00 solid;}
 .result_txt p{ font-size:0.9em; color:#FFFFFF; height:23px; line-height:23px; margin:0; text-align:center;}
 .result_link{ width:100%; height:160px; padding:10px 0; margin:0; position:relative; top:-30px; background-color:#00CBEB; z-index:70;}
