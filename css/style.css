@@ -1,10 +1,4 @@
 /* CSS Document */
-body,div,header,h1,h2,h3,h4,h5,h6,form,input,nav,section,a,ul,li,dl,dt,dd,strong,p,footer,span,img{ margin:0; padding:0;}
-body{ font-family:'ºÚÌå',"Airal"; text-align:left; font-size:1em; color:#919191; background:#efefef;}
-li{ list-style:none;}
-a{ text-decoration:none; color:#4F5052;}
-font{ color:#FfF200; margin-right:20px; font-size:1.1em;}
-img{ width:100%;}
 body{ margin:0; padding:0;}
 
 
@@ -27,7 +21,6 @@ body{ margin:0; padding:0;}
 .index_input input{ float:right; width:70%; height:50px; box-sizing:border-box; padding:0; background-color:#FFFFFF; font-family:ºÚÌå; font-size:1.2em; color:#afafaf; line-height:48px; text-align:center; border:0;opacity:0.9; border-radius:0px; position:absolute; -webkit-appearance:none;}
 
 .index_submit{
-
 text-align: center;
   top: 63.5%;
   position: absolute;
@@ -53,12 +46,12 @@ height: 100%;
 .result_score p{ color:#00CBEB;}
 .result_score_Toefl{ width:53%; height:120px; float:left; border:0px #0000FF solid;}
 .result_score_Ielts{ width:45%; height:120px; float:left; border:0px #3300CC solid;}
-.result_img{ width:100%; height:auto; position:relative; margin:0; padding-top:10%; z-index:100;}
-.result_code{ width:100%; text-align:center; height:auto; position:relative; background-color:#00CBEB; padding:5% 0 1% 0; border:0px #000099 solid; top:-10px; z-index:80;}
+.result_img{ width:100%; height:auto; position:relative; margin:0; padding-top:10%; z-index:100; display:block;}
+.result_code{ width:100%; text-align:center; height:auto; position:relative; background-color:#00CBEB; padding:5% 0 1% 0; border:0px #000099 solid;  z-index:80;}
 .result_code_img{ width:70%; max-width:70%; height:auto; position:relative;}
-.result_txt{ width:100%; height:auto; padding:2% 0; background-color:#00CBEB; position:relative; top:-15px; z-index:90; border:0px #00FF00 solid;}
+.result_txt{ width:100%; height:auto; padding:2% 0; background-color:#00CBEB; position:relative; z-index:90; border:0px #00FF00 solid;}
 .result_txt p{ font-size:0.9em; color:#FFFFFF; height:23px; line-height:23px; margin:0; text-align:center;}
-.result_link{ width:100%; height:160px; padding:10px 0; margin:0; position:relative; top:-30px; background-color:#00CBEB; z-index:70;}
+.result_link{ width:100%; height:160px; padding:10px 0; margin:0; position:relative; background-color:#00CBEB; z-index:70;}
 .result_link div{ width:49%; height:40px; line-height:40px; margin:20px 25%; border:2px #FFFFFF solid; text-align:center;}
 .result_link_share{ background-color:#FFFFFF; color:#00CBEB;}
 .result_link_test{ background-color:#00CBEB; color:#FFFFFF;}
