@@ -2,69 +2,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>托福雅思成绩转换器</title>
-<link type="text/css" href="css/style.css" rel="stylesheet">
-<script src="js/function.js" type="text/javascript" language="javascript"></script>
-<script>
-window.onload = function(event){
-    document.getElementById("index_input_select").innerHTML = "CET4";
-    document.getElementById("submit").addEventListener('touchstart',Calculation,false); 
-    document.getElementById("score").addEventListener('touchstart',clearInput,false); 
-	document.getElementById("index_input_cet").addEventListener('touchstart',Select,false); 
-	document.getElementById("CET4").addEventListener('touchstart',Select4,false); 
-	document.getElementById("CET6").addEventListener('touchstart',Select6,false); 
-} 
-</script>
+<title>你的留学-中介orDIY</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" >
 </head>
 
 <body>
-<div style="display:none;">
-	<img src="img/logo.jpg">
-</div>
-<div class="box" id="box" style="border:0px #990000 solid; display:block;">
-	<div class="index_bg">
-		<img src="img/index_bg.jpg" width="100%" height="auto" />
-	</div>
-	<div class="index">
-		<div class="index_txt">
-			<p>
-				&nbsp;神预测！
-			</p>
-			<p>
-				&nbsp;看看你的托福雅思多少分！
-			</p>
-		</div>
-		<div class="index_input">
-			<div class="index_input_cet" id="index_input_cet">
-				<div class="index_input_select" id="index_input_select" style="display:block;">
-				</div>
-				<div class="index_input_arrow" id="index_input_arrowbot" style="display:block;">
-					<div class="index_input_arrow_bottom0">
-					</div>
-					<div class="index_input_arrow_bottom1">
-					</div>
-				</div>
-				<div class="index_input_arrow" id="index_input_arrowtop" style="display:none;">
-					<div class="index_input_arrow_top0">
-					</div>
-					<div class="index_input_arrow_top1">
-					</div>
-				</div>
-				<div class="index_input_list" id="index_input_list" style="display:none;">
-					<div id="CET4">
-						CET4
-					</div>
-					<div id="CET6">
-						CET6
-					</div>
-				</div>
+	<div class="main">
+		<img src="img/index_bg.png">
+		<div class="content">
+			<div class="index_title">
+				你的留学<br>
+				中介orDIY
 			</div>
-			<input type="text" name="score" id="score" value="请输入您的成绩">
-		</div>
-		<div class="index_submit">
-			<input type="submit" style="font-family:黑体; text-align:center;" value="提交" id="submit">
+			<div class="index_text">
+				其实你与你的内心有一层神秘的面纱<br>
+				准备好面对真实的自己了吗<br>
+				选择真实的答案<br>
+				测试结果帮你做选择<br>
+			</div>
+			<div class="index_button">
+				<button type="submit" value="现在开始" onclick="javascript:location.href='test.html'">现在开始</button>
+			</div>
 		</div>
 	</div>
-</div>
 </body>
 </html>

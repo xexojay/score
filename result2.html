@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>留学DIY没有那么可怕的，你要相信自己，其实你可以，要加油哦！</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" >
+<script type="text/javascript">
+window.onload = function(event){
+	judge();
+    document.getElementById("result_share").addEventListener('touchstart',hidden,false); 
+	document.getElementById("share").addEventListener('touchstart',share,false); 
+} 
+function share(){
+	document.getElementById("result_share").style.display='block';
+}
+function hidden(event){
+	document.getElementById("result_share").style.display='none';
+}
+function judge(event){
+	var url = location.href;
+	if(url.indexOf('?') < 0)
+		window.location.href='index.html';
+}
+</script>
+</head>
+
+<body>
+	<img src="img/title.jpg" style="display:none;">
+	<div class="main"> 
+		<img src="img/index_bg.png">
+		<div class="result_content"> 
+			<div class="result_title">
+				DIY指数<br> 
+				<div class="result_title_img">
+					<img src="img/result_star1.png">
+					<img src="img/result_star1.png">
+					<img src="img/result_star1.png">
+					<img src="img/result_star2.png">
+					<img src="img/result_star2.png">
+				</div>
+			</div>
+			<div class="result_con">
+				<img  src="img/result_2.png">
+				<div class="result_bg">
+				</div>
+				<div class="result_text">
+					留学DIY没有那么可怕的，你要相信自己，其实你可以，要加油哦！
+				</div>
+			</div>
+			<div class="result_button">
+				<button type="submit" onClick="javascript:location.href='attention.html'">关注</button><br>
+				<button type="submit" id="share" onClick="share()">分享</button>
+			</div> 
+		</div> 
+	</div> 
+	<img class="result_share" id="result_share" style="display:none" src="img/result_share.jpg">
+</body>
+</html>
+		

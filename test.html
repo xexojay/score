@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>你的留学-中介orDIY</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script type="text/javascript">
+var p=1;
+var q=0;
+function Clicke(t){
+	p++;
+	q=q+t;
+	switch (p)
+	{
+		case 2:
+			document.getElementById("test_bgKN").style.webkitFilter = 'blur(10px)';
+			document.getElementById("test_title").innerHTML = "第二题";
+			document.getElementById("question").innerHTML = "你大学期间参加过很多活动并略有成就哦！";
+			document.getElementById("A").innerHTML = "A:是呀是呀呵呵呵";
+			document.getElementById("B").innerHTML = "B:游戏之类的算么";
+			break;
+		case 3:
+			document.getElementById("test_bgKN").style.webkitFilter = 'blur(7px)';
+			document.getElementById("test_title").innerHTML = "第三题";
+			document.getElementById("question").innerHTML = "身为中国院校高材生<br>提笔成章的功力必须有。";
+			document.getElementById("A").innerHTML = "A:Yes";
+			document.getElementById("B").innerHTML = "B:No";			
+			break;
+		case 4:
+			document.getElementById("test_bgKN").style.webkitFilter = 'blur(4px)';
+			document.getElementById("test_title").innerHTML = "第四题";
+			document.getElementById("question").innerHTML = "你是做事很有计划的人<br>喜欢按部就班，高效率？";
+			document.getElementById("A").innerHTML = "A:一直这样";
+			document.getElementById("B").innerHTML = "B:看心情啦";
+			break;
+		case 5:
+			document.getElementById("test_bgKN").style.webkitFilter = 'blur(2px)';
+			document.getElementById("test_title").innerHTML = "第五题";
+			document.getElementById("question").innerHTML = "你会主动查找资料<br>了解新信息？";
+			document.getElementById("A").innerHTML = "A:喜欢自己整理";
+			document.getElementById("B").innerHTML = "B:一般会问学长";
+			break;
+		case 6:
+			document.getElementById("test_bgKN").style.webkitFilter = 'blur(0px)';
+			document.getElementById("test_title").innerHTML = "第六题";
+			document.getElementById("question").innerHTML = "遇事较为冷静<br>可以慢慢独立解决？";
+			document.getElementById("A").innerHTML = "A:是，比较独立";
+			document.getElementById("B").innerHTML = "B:喜欢依赖死党";
+			break;
+		default:
+//			alert(q);
+			if(q>=0&&q<=2)
+				window.location.href='result1.html?flag=1';
+			else if(q>=3&&q<=4)
+				window.location.href='result2.html?flag=1';
+			else if(q>=5&&q<=6)
+				window.location.href='result3.html?flag=1';
+			break;
+	}
+}
+</script>
+</head>
+
+<body>
+	<div class="main">
+		<img src="img/index_bg.png">
+		<div class="content">
+			<img src="img/test_bgKN.png" id="test_bgKN">
+			<div class="test_title">
+				<span id="test_title">
+					第一题
+				</span>
+			</div>
+			<div class="test_text" id="question">
+				四六级对你来讲简直小事一桩？
+			</div>
+			<div class="test_button">
+				<button type="submit" id="A" onClick="Clicke(1)">A:必须哒</button><br>
+				<button type="submit" id="B" onClick="Clicke(0)">B:并木有</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

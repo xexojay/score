@@ -1,59 +1,38 @@
-/* CSS Document */
+body,div,header,h1,h2,h3,h4,h5,h6,form,input,nav,section,a,ul,li,dl,dt,dd,strong,p,footer,span,img{ margin:0; padding:0;}
+body{ font-family:'é»‘ä½“',"Airal"; text-align:left; font-size:1em;}
+li{ list-style:none;}
+a{ text-decoration:none; color:#4F5052;}
+font{ color:#FfF200; margin-right:20px; font-size:1.1em;}
+img{ width:100%;}
 body{ margin:0; padding:0;}
 
+.main{ min-width:320px; max-width:720px; width:100%; height:100%; margin:0 auto; position:relative; z-index:1;}
+.main img{ width:100%; height:100%; position:relative; z-index:-1; display:block;}
+.content{ width:70%; height:67%; top:21%; margin:0 15%; position:absolute; z-index:100; border:0px #0000FF solid;}
+.content img{ width:90%; height:90%; margin:5% 3% 5% 7%; -webkit-filter:blur(13px);-moz-filter:blur(13px); -ms-filter:blur(13px); filter:blur(13px); position:absolute; z-index:90;} /*-moz-filter:blur(13px); -ms-filter:blur(13px); filter:blur(13px);*/
+.index_title{ height:25%; margin-top:2%; width:100%; line-height:35px; text-align:center; font-family:é»‘ä½“; font-size:1.2em; color:#707070;}
+.index_text{ height:43%; width:100%; line-height:25px; text-align:center; font-family:é»‘ä½“; font-size:1em; color:#707070;}
+.index_button{ height:20%; width:100%; text-align:center;}
+.index_button button{ width:100px; height:35px; text-align:center; line-height:35px; border:none; color:#FFFFFF; font-family:é»‘ä½“; font-size:1em; border-radius:5px; background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#FE639C), to(#D30148)); letter-spacing:2px;}
 
-.box{ min-width:320px; max-width:720px; width:100%; height:auto; margin:0 auto; position:absolute; border:none;}
-.index{ width:100%; height:100%; border:none;}
-.index_bg{ width:100%; height:100%; z-index:-1; position:relative; border:none; display:block;}
-.index_bg img{ display:block;}
-.index_txt{ width:100%; height:12%; top:34%; border:0px #FF0000 solid; position:absolute; z-index:10;}
-.index_txt p{ width:100%; height:50%; text-align:center; font-family:ºÚÌå; font-size:1.4em; color:#FFFFFF; border:0px #FFFFFF solid; margin:0; letter-spacing:2px; text-shadow:0 0 2px #000000;}
-.index_input{ width:90%; height:50px; margin:0 5%; border:#827E7B solid 1px; position:absolute; top:48%; z-index:10;}
-.index_input_cet{ float:left; width:30%; height:50px; background-color:#FFFFFF; border:0; opacity:1; position:relative;}
-.index_input_select{ float:left; width:70%; height:50px; text-align:center; font-family:Arial; font-size:1.2em; color:#afafaf; height:50px; line-height:50px;}
-.index_input_arrow{ width:25%; height:50px; margin-left:72%; position:absolute;}
-.index_input_arrow_bottom0{ position:absolute; border-color:#afafaf transparent transparent transparent; border-width:8px 8px 0 8px; border-style:solid; top:23px;}
-.index_input_arrow_bottom1{ position:absolute; border-color:#FFFFFF transparent transparent transparent; border-width:8px 8px 0 8px; border-style:solid; top:20px;}
-.index_input_arrow_top0{ position:absolute; border-color:transparent transparent #afafaf transparent; border-width:0 8px 8px 8px; border-style:solid; top:20px;}
-.index_input_arrow_top1{ position:absolute; border-color:transparent transparent #FFFFFF transparent; border-width:0 8px 8px 8px; border-style:solid; top:23px;}
-.index_input_list{ width:100%; height:62px; border:0px #FFFF00 solid; margin-top:50px; background-color:#FFFFFF; opacity:0.95;}
-.index_input_list div{ width:100%; height:30px; line-height:30px; text-align:center; font-family:Arial; font-size:1.2em; color:#afafaf; border-top:1px solid #CCCCCC;}
-.index_input input{ float:right; width:70%; height:50px; box-sizing:border-box; padding:0; background-color:#FFFFFF; font-family:ºÚÌå; font-size:1.2em; color:#afafaf; line-height:48px; text-align:center; border:0;opacity:0.9; border-radius:0px; position:absolute; -webkit-appearance:none;}
+.test_title{ height:15%; margin-top:15%; width:100%; line-height:35px; text-align:center; font-size:1.7em; color:#707070;  position:relative; z-index:150;}
+.test_title span{ font-family:"æ¥·ä½“"; margin:1%; border-bottom:1px solid #707070;}
+.test_text{ height:15%; width:100%; line-height:25px; text-align:center; font-family:é»‘ä½“; font-size:1em; color:#707070;position:relative; z-index:150;}
+.test_button{ height:35%; width:100%; text-align:center; position:relative; z-index:150;}
+.test_button button{ width:auto; height:35px; margin:10px 0; padding:0 15px; text-align:center; line-height:35px; border:none; color:#FFFFFF; font-family:é»‘ä½“; font-size:1em; border-radius:17px; background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#FE639C), to(#D30148)); letter-spacing:2px;}
 
-.index_submit{
-text-align: center;
-  top: 63.5%;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  height: 18%;
-}
-.index_submit input{
-height: 100%;
-  line-height: 100%;
-  background: none;
-  border:none;
-  opacity: 0.9;
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 1.8em;
-  -webkit-appearance: none;
-  display: inline;
-}
+.result_content{ width:79.1%; margin:0 10.2%; height:78%; top:11%; position:absolute; z-index:100; border:0px #0000FF solid;}
+.result_title{ height:16%; margin-top:16%; width:100%; line-height:30px; text-align:center; font-family:æ¥·ä½“; font-size:1.6em; color:#707070; position:relative; z-index:200;}
+.result_title_img{ height:35px; width:150px; margin:0 auto;}
+.result_title_img img{ height:auto; width:25px; float:left; margin:5px 2.5px 0px 2.5px;}
+.result_con{ height:53%; width:100%; line-height:25px; text-align:center;position:relative; z-index:200; overflow:hidden;}
+.result_con img{ width:80%; margin:0 10%; height:auto; position:absolute; bottom:0; z-index:60;}
+.result_bg{ width:100%; height:188.7%; top:-49%; margin:0 auto; position:absolute; z-index:80; background-color:#222222; border-radius:50% 50% 50% 50%;opacity:0.4; }
+.result_text{ width:90%; margin:0 5%; height:auto; font-family:é»‘ä½“; font-size:1em; color:#FFFFFF; line-height:22px; position:absolute; bottom:0; z-index:300; text-align:center;}
+.result_button{ height:18%; width:100%; margin-top:2%; text-align:center;}
+.result_button button{ width:95px; height:25px; margin:1% 0; text-align:center; line-height:25px; border:none; color:#FFFFFF; font-family:é»‘ä½“; font-size:1em; border-radius:5px; background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#FE639C), to(#D30148)); letter-spacing:2px;}
+.result_share{ width:100%; height:100%; position:absolute; z-index:500; top:0; left:0; display:block;}
 
-.box2{ min-width:320px; max-width:720px; width:100%; height:100%; margin:0 auto; position:absolute; border:0px #000000 solid;}
-.result_score{ width:88%; height:auto; margin:10% 2% 0 10%; border:0px #FF0000 solid; font-family:ºÚÌå; position:relative;}
-.result_score p{ color:#00CBEB;}
-.result_score_Toefl{ width:53%; height:120px; float:left; border:0px #0000FF solid;}
-.result_score_Ielts{ width:45%; height:120px; float:left; border:0px #3300CC solid;}
-.result_img{ width:100%; height:auto; position:relative; margin:0; padding-top:10%; z-index:100; display:block;}
-.result_code{ width:100%; text-align:center; height:auto; position:relative; background-color:#00CBEB; padding:5% 0 1% 0; border:0px #000099 solid;  z-index:80;}
-.result_code_img{ width:70%; max-width:70%; height:auto; position:relative;}
-.result_txt{ width:100%; height:auto; padding:2% 0; background-color:#00CBEB; position:relative; z-index:90; border:0px #00FF00 solid;}
-.result_txt p{ font-size:0.9em; color:#FFFFFF; height:23px; line-height:23px; margin:0; text-align:center;}
-.result_link{ width:100%; height:160px; padding:10px 0; margin:0; position:relative; background-color:#00CBEB; z-index:70;}
-.result_link div{ width:49%; height:40px; line-height:40px; margin:20px 25%; border:2px #FFFFFF solid; text-align:center;}
-.result_link_share{ background-color:#FFFFFF; color:#00CBEB;}
-.result_link_test{ background-color:#00CBEB; color:#FFFFFF;}
-.result_share{ position:absolute; top:0; left:0; z-index:999;}
-.result_share img{ width:100%; height:100%; position:fixed;}
+
+
+
