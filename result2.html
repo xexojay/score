@@ -17,15 +17,15 @@ function hidden(event){
 	document.getElementById("result_share").style.display='none';
 }
 function judge(event){
-	var url = location.href;
-	if(url.indexOf('?') < 0)
-		window.location.href='index.html';
+	window.history.pushState({},0,'http://pm.dulishuo.com/index.html');  
 }
 </script>
 </head>
 
 <body>
-	<img src="img/title.jpg" style="display:none;">
+	<div style="display:none;">
+		<img src="img/title.jpg">
+	</div>
 	<div class="main"> 
 		<img src="img/index_bg.png">
 		<div class="result_content"> 
@@ -41,8 +41,7 @@ function judge(event){
 			</div>
 			<div class="result_con">
 				<img  src="img/result_2.png">
-				<div class="result_bg">
-				</div>
+				<div class="result_bg">				</div>
 				<div class="result_text">
 					留学DIY没有那么可怕的，你要相信自己，其实你可以，要加油哦！
 				</div>
