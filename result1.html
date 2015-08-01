@@ -20,13 +20,20 @@ function judge(event){
 	var url = location.href;
 	if(url.indexOf('?') < 0)
 		window.location.href='index.html';
+	alert(window.location.href);
+	//window.history.pushState({},0,'http://'+window.location.host+'/result1.html');  
+	window.history.pushState({},0,'file:///D:/Work/GitHub/score/result1.html');  
+//	alert(window.location.href);
+	
+            
 }
 </script>
 </head>
 
 <body>
-	<img src="img/title.jpg" style="display:none;">
+	
 	<div class="main"> 
+		<img src="img/title.jpg" style="display:none;">
 		<img src="img/index_bg.png">
 		<div class="result_content"> 
 			<div class="result_title">
@@ -41,8 +48,7 @@ function judge(event){
 			</div>
 			<div class="result_con">
 				<img  src="img/result_1.jpg">
-				<div class="result_bg">
-				</div>
+				<div class="result_bg">				</div>
 				<div class="result_text">
 					好的留学中介不是碰出来的，仔细阅读“与留学中介斗智斗勇的十二锦囊”是很有必要哒！
 				</div>

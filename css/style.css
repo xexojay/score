@@ -31,7 +31,7 @@ body{ margin:0; padding:0;}
 .result_text{ width:90%; margin:0 5%; height:auto; font-family:黑体; font-size:1em; color:#FFFFFF; line-height:22px; position:absolute; bottom:0; z-index:300; text-align:center;}
 .result_button{ height:18%; width:100%; margin-top:2%; text-align:center;}
 .result_button button{ width:95px; height:28px; margin:1.5% 0; text-align:center; line-height:25px; border:none; color:#FFFFFF; font-family:黑体; font-size:1em; border-radius:5px; background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#FE639C), to(#D30148)); letter-spacing:2px;}
-.result_share{ width:100%; height:100%; position:absolute; z-index:500; top:0; left:0; display:block;}
+.result_share{ width:100%; height:100%; position:fixed; z-index:500; top:0; left:0; display:block;}
 
 
 
