@@ -6,9 +6,9 @@ font{ color:#FfF200; margin-right:20px; font-size:1.1em;}
 img{ width:100%;}
 body{ margin:0; padding:0;}
 
-.main{ min-width:320px; max-width:720px; max-height:1206px; width:100%; height:100%; border:2px #FF0000 solid; margin:0 auto; position:relative; z-index:1; box-sizing:border-box;}
+.main{ min-width:320px; max-width:720px; max-height:1206px; width:100%; height:100%; border:0px #FF0000 solid; margin:0 auto; position:relative; z-index:1; box-sizing:border-box;}
 .main img{ width:100%; height:100%; position:relative; z-index:-1; display:block;}
-.content{ width:70%; height:67%; top:21%; margin:0 15%; position:absolute; z-index:100; border:2px #0000FF solid;}
+.content{ width:70%; height:67%; top:21%; margin:0 15%; position:absolute; z-index:100; border:0px #0000FF solid;}
 .content img{ width:90%; height:90%; margin:5% 3% 5% 7%; -webkit-filter:blur(13px);-moz-filter:blur(13px); -ms-filter:blur(13px); filter:blur(13px); position:absolute; z-index:90;} /*-moz-filter:blur(13px); -ms-filter:blur(13px); filter:blur(13px);*/
 .index_title{ height:25%; margin-top:2%; width:100%; line-height:35px; text-align:center; font-family:黑体; font-size:1.2em; color:#707070; position:relative;}
 .index_text{ height:43%; width:100%; line-height:25px; text-align:center; font-family:黑体; font-size:1em; color:#707070; position:relative;}
